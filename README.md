@@ -43,11 +43,11 @@ This project consists of a node backend connected to a MongoDB remote and a Reac
 
 ### Server
 
-I use nodejs with babel as a transpiler, so I can use nice es8 things (like async/await) and coalesce/nullish check operators. This increases code readbility and makes maintenance a lot easier. We use express as a framework to serve routes and setup listening, and also to serve static React built files. With it, we use body-parser to parse received requests to JSON and content-filter to handle some pesky NoSQL injections.
+I used nodejs with babel as a transpiler, so I can use nice es8 things (like async/await) and coalesce/nullish check operators. This increases code readbility and makes maintenance a lot easier. I used express as a framework to serve routes and setup listening, and also to serve static React built files. With it, I used body-parser to parse received requests to JSON and content-filter to handle some pesky NoSQL injections.
 
-I also use JWT as a security layer and bcrypt for password encryption. To connect to MongoDB, I use mongoose. MongoDB was choosen for no specific reason other than that I wanted to learn it's basics (I had no prior experience with it).
+I used JWT as a security layer and bcrypt for password encryption. To connect to MongoDB, I used mongoose. MongoDB was choosen for no specific reason other than that I wanted to learn it's basics (I had no prior experience with it).
 
-One desing decision is that I always get userId from the JWT token payload. This locks user access to content that is owned by him.
+One desing decision is that I always get userId from the JWT token payload. This locks user access to content belonging to it.
 
 ### Client
 

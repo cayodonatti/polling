@@ -4,3 +4,4 @@ export * from "./appbar/index";
 export * from "./errorDialog";
 export * from "./Option";
 export * from "./PollForm";
+export * from "./toast";

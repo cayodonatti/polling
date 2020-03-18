@@ -11,6 +11,7 @@ import Done from "@material-ui/icons/Done";
 import Share from "@material-ui/icons/Share";
 import Edit from "@material-ui/icons/Edit";
 import Option from "./components/Option";
+import Toast from "../../components/toast";
 
 export function PollPage() {
   const { pollId } = useParams();
@@ -22,6 +23,7 @@ export function PollPage() {
   const [loading, setLoading] = useState(false);
   const [voted, setVoted] = useState(false);
   const [preloadedVote, setPreloadedVote] = useState(false);
+  const [toastOpen, setToastOpen] = useState(false);
   const history = useHistory();
 
   const loadPoll = useCallback(async () => {
@@ -78,7 +80,7 @@ export function PollPage() {
         setLoading(false);
       }
     },
-    [choosenOption, poll, preloadedVote, user]
+    [choosenOption, poll, preloadedVote]
   );
 
   const copyToClipboard = useCallback(() => {
@@ -88,6 +90,8 @@ export function PollPage() {
     textField.select();
     document.execCommand("copy");
     textField.remove();
+
+    setToastOpen(true);
   }, []);
 
   const blockUnlogged = poll?.requiresAuth && !user;
@@ -180,6 +184,11 @@ export function PollPage() {
         )}
       </CenterHorizontal>
 
+      <Toast
+        isOpen={toastOpen}
+        close={() => setToastOpen(false)}
+        message={"Poll link copied to clipdoard."}
+      />
       <ErrorDialog message={errorMessage} close={() => setErrorMessage(null)} />
     </Page>
   );

@@ -2,7 +2,7 @@ export default {
   success: (res, data) => {
     let payload = {
       data,
-      message: "Sucesso"
+      message: "Success"
     };
     res.status(200).json(payload);
   },
