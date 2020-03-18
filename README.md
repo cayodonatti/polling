@@ -6,7 +6,7 @@ This was Cayo's (me) test on a polling website.
 
 You need to have installed yarn. Everything else is dev dependency and the project should work out of the box. You also need a local MongoDB server running (see https://zellwk.com/blog/local-mongodb/).
 
-You also need to setup a .env file as below: s
+You also need to setup a .env file as below:
 
 ```
 API_PORT=21272
@@ -63,7 +63,3 @@ On the UI side, I've used mainly Material UI and recharts because I'm not too fa
 - Better structiring for api folders and methods
 - Components should be dumber amd more specialized
 - Build model validation on mongoose Schemas rather than controllers
-
-```
-
-```
