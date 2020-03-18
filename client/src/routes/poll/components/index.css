@@ -1,0 +1,14 @@
+.chart {
+  width: 60vw;
+  height: 40vh;
+}
+.radioItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.square {
+  height: 16px;
+  width: 16px;
+  margin-right: 2vw;
+}

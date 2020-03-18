@@ -1,0 +1,47 @@
+{
+  "name": "signalr-node-api",
+  "version": "1.0.0",
+  "description": "Sample api with signalr thingies",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "client": "cd client && yarn start",
+    "server": "nodemon --exec 'babel-node ./server/app.js'",
+    "debug": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "prebuild": "rm -rf dist/*",
+    "build": "babel server -d dist",
+    "postbuild": "cd client && yarn && yarn build"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/client/**"
+    ]
+  },
+  "author": "Cayo Donatti",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.8.7",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "content-filter": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.2"
+  }
+}

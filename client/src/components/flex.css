@@ -1,0 +1,40 @@
+.center {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  margin-left: 3vw;
+  margin-left: 3vw;
+}
+.centerHorizontal {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  margin-left: 3vw;
+  margin-left: 3vw;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+}
+.option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.addOptionButton {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+.separator {
+  margin-right: 1vw;
+}

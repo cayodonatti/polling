@@ -1,0 +1,8 @@
+.separator {
+  height: 1vh;
+}
+.title {
+  color: primary;
+  text-align: center;
+  padding: 10vw;
+}

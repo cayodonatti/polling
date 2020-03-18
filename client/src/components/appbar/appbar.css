@@ -1,0 +1,17 @@
+.app-title {
+  flex-grow: 1;
+}
+.separator {
+  margin-top: 0.5vh;
+}
+.login-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.dialogContainer {
+  margin-bottom: 2vh;
+}
+.logoutMenuTitle {
+  padding: 2vw;
+}

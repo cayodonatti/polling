@@ -1,0 +1,16 @@
+.optionForm {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  width: 70vw;
+}
+.buttonContainer {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: row;
+}
+.buttonSeparator {
+  margin-left: 2vw;
+}
