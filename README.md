@@ -8,7 +8,7 @@ You need to have installed yarn. Everything else is dev dependency and the proje
 
 You also need to setup a .env file as below: s
 
-````
+```
 API_PORT=21272
 NODE_ENV=dev
 JWT_SECRET=YOUR_JWT_SECRET
@@ -63,4 +63,7 @@ On the UI side, I've used mainly Material UI and recharts because I'm not too fa
 - Better structiring for api folders and methods
 - Components should be dumber amd more specialized
 - Build model validation on mongoose Schemas rather than controllers
-````
+
+```
+
+```
